@@ -1,0 +1,22 @@
+cc_library {
+    name: "libgptutils.sdm710",
+    vendor: true,
+    recovery_available: true,
+    srcs: [
+        "gpt-utils.cpp",
+    ],
+    shared_libs: [
+            "libcutils",
+            "liblog",
+            "libz",
+    ],
+    cflags: [
+        "-Wall",
+        "-Wno-unused-parameter",
+    ],
+    owner: "qti",
+    export_include_dirs: ["."],
+    header_libs: [
+            "qti_kernel_headers",
+    ],
+}
