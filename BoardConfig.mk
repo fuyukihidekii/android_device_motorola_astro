@@ -6,6 +6,8 @@
 
 DEVICE_PATH := device/motorola/astro
 
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
