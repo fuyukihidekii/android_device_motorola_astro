@@ -92,7 +92,7 @@ TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 VENDOR_SECURITY_PATCH := 2022-06-01
 
 # VINTF
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hardware/vintf/device.xml
 
 # Inherit the proprietary files
 include vendor/motorola/astro/BoardConfigVendor.mk
