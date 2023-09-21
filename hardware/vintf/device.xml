@@ -1,5 +1,10 @@
 <manifest version="2.0" type="device" target-level="4">
     <hal format="hidl">
+        <name>android.hardware.boot</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IBootControl/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
         <fqname>@6.0::IDevicesFactory/default</fqname>
@@ -23,11 +28,6 @@
         <name>android.hardware.bluetooth.audio</name>
         <transport>hwbinder</transport>
         <fqname>@2.0::IBluetoothAudioProvidersFactory/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.boot</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IBootControl/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.camera.provider</name>
